@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -14,10 +15,10 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="586"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="USERNAME [ guestuser ]" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UQy-lr-Cfh">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="USERNAME [ guestuser ]" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UQy-lr-Cfh">
                                 <rect key="frame" x="120" y="56" width="260" height="30"/>
                                 <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -37,7 +38,7 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="PASSWORD [ letmein ]" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8OP-rl-xmS">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="PASSWORD [ letmein ]" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8OP-rl-xmS">
                                 <rect key="frame" x="120" y="105" width="260" height="30"/>
                                 <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -57,7 +58,7 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amw-52-24u">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amw-52-24u">
                                 <rect key="frame" x="196" y="204" width="108" height="50"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -83,7 +84,7 @@
                                     <action selector="btnSignIn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Xhk-TK-qsE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rln-ip-O2E">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rln-ip-O2E">
                                 <rect key="frame" x="249" y="438" width="55" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8PX-XC-PCE"/>
@@ -192,10 +193,10 @@
                         <viewControllerLayoutGuide type="bottom" id="Eqe-q4-IBe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nTo-Es-qdc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="586"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Firstname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf1-Is-Mxf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firstname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf1-Is-Mxf">
                                 <rect key="frame" x="179" y="116" width="125" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Uzd-Jz-wSe"/>
@@ -214,7 +215,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Surname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbX-DZ-hVH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbX-DZ-hVH">
                                 <rect key="frame" x="179" y="144" width="125" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="JLr-RN-oS9"/>
@@ -232,7 +233,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xq3-TR-fl1">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xq3-TR-fl1">
                                 <rect key="frame" x="179" y="173" width="125" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="L3X-BO-F9A"/>
@@ -251,7 +252,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pl-AW-TLd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pl-AW-TLd">
                                 <rect key="frame" x="40" y="251" width="264" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="UMi-nx-TBl"/>
@@ -270,7 +271,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phonenumber" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9P-f1-4vT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phonenumber" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9P-f1-4vT">
                                 <rect key="frame" x="40" y="273" width="264" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="JSg-Wo-93p"/>
@@ -289,10 +290,10 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Avatar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9XM-PC-Sjb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9XM-PC-Sjb">
                                 <rect key="frame" x="43" y="120" width="120" height="120"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMs-2J-s1i">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMs-2J-s1i">
                                 <rect key="frame" x="21" y="520" width="91" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="BIN-E5-t48"/>
@@ -356,15 +357,16 @@
                                 <exclude reference="mMs-2J-s1i"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="D8w-fv-5M3"/>
-                                <exclude reference="YpK-C2-ebY"/>
-                                <exclude reference="lH7-SH-B0t"/>
+                                <exclude reference="vpQ-ts-SV5"/>
                                 <exclude reference="Z8x-jd-NRD"/>
                                 <exclude reference="fra-18-FR3"/>
                                 <exclude reference="7pw-BH-uj6"/>
                                 <exclude reference="9Do-Mp-8Cy"/>
                                 <exclude reference="IdD-5Q-fkH"/>
                                 <exclude reference="dsh-Kr-DcK"/>
+                                <exclude reference="D8w-fv-5M3"/>
+                                <exclude reference="YpK-C2-ebY"/>
+                                <exclude reference="lH7-SH-B0t"/>
                                 <exclude reference="69J-dt-izZ"/>
                                 <exclude reference="BOL-Ld-bNo"/>
                                 <exclude reference="Bwv-SW-zba"/>
@@ -377,7 +379,6 @@
                                 <exclude reference="e0Y-9H-Pug"/>
                                 <exclude reference="s49-fm-2Ys"/>
                                 <exclude reference="Qjd-be-e2Z"/>
-                                <exclude reference="vpQ-ts-SV5"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -391,15 +392,16 @@
                                 <include reference="mMs-2J-s1i"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="D8w-fv-5M3"/>
-                                <include reference="YpK-C2-ebY"/>
-                                <include reference="lH7-SH-B0t"/>
+                                <include reference="vpQ-ts-SV5"/>
                                 <include reference="Z8x-jd-NRD"/>
                                 <include reference="fra-18-FR3"/>
                                 <include reference="7pw-BH-uj6"/>
                                 <include reference="9Do-Mp-8Cy"/>
                                 <include reference="IdD-5Q-fkH"/>
                                 <include reference="dsh-Kr-DcK"/>
+                                <include reference="D8w-fv-5M3"/>
+                                <include reference="YpK-C2-ebY"/>
+                                <include reference="lH7-SH-B0t"/>
                                 <include reference="69J-dt-izZ"/>
                                 <include reference="BOL-Ld-bNo"/>
                                 <include reference="Bwv-SW-zba"/>
@@ -412,7 +414,6 @@
                                 <include reference="e0Y-9H-Pug"/>
                                 <include reference="s49-fm-2Ys"/>
                                 <include reference="Qjd-be-e2Z"/>
-                                <include reference="vpQ-ts-SV5"/>
                             </mask>
                         </variation>
                     </view>

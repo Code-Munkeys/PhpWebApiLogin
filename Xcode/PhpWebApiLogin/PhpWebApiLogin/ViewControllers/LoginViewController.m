@@ -27,7 +27,10 @@ User* UserLoginDetails;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        
+    
+    self.txtUsername.delegate = self;
+    self.txtPassword.delegate = self;
+    
     [[btnSignIn layer] setBorderWidth:2.0f];
     [[btnSignIn layer] setBorderColor:[UIColor blackColor].CGColor];
     btnSignIn.layer.cornerRadius=10.0f;
@@ -120,6 +123,13 @@ User* UserLoginDetails;
 - (IBAction)btnSignIn:(id)sender
 {
     [self SignIn];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if ( textField == self.txtUsername ) { [self.txtPassword becomeFirstResponder]; }
+    if ( textField == self.txtPassword ) { [self SignIn]; return YES; }
+    return YES;
 }
 
 - (IBAction)gstHideKeyboard:(id)sender
