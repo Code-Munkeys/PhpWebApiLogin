@@ -1,0 +1,39 @@
+﻿<html>
+<head>
+<title>File-2-Base64</title>
+
+<script type="text/javascript" src="JavaScripts/jquery-1.6.4.min.js"></script>
+
+</head>
+<body>
+
+<canvas id="canvas" width="100%" height="100%"></canvas>​
+
+<div id="textsection">
+<textarea rows="10" id="lblBase64Code"></textarea>
+</div>
+
+<script type="text/javascript">
+
+  var canvas = document.getElementById('canvas');
+  var ctx = canvas.getContext('2d');
+
+  var img = new Image();
+  
+  img.onload = function()
+  {
+  canvas.width  = img.width;
+  canvas.height = img.height;
+  ctx.drawImage(img, 0, 0, img.width, img.height);
+
+  $('#lblBase64Code').html(canvas.toDataURL());
+  }
+ 
+  img.src = 'Images/Codemunkeys.jpg';
+
+</script>
+
+</body>
+</html>
+
+

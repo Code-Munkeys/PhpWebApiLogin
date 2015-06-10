@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F44693451B286AB4007DC2D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F44693441B286AB4007DC2D7 /* main.m */; };
+		F44693481B286AB4007DC2D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F44693471B286AB4007DC2D7 /* AppDelegate.m */; };
+		F446934E1B286AB4007DC2D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F446934C1B286AB4007DC2D7 /* Main.storyboard */; };
+		F44693501B286AB4007DC2D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F446934F1B286AB4007DC2D7 /* Images.xcassets */; };
+		F44693531B286AB4007DC2D7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44693511B286AB4007DC2D7 /* LaunchScreen.xib */; };
+		F446935F1B286AB4007DC2D7 /* PhpWebApiLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F446935E1B286AB4007DC2D7 /* PhpWebApiLoginTests.m */; };
+		F446936B1B286B1D007DC2D7 /* WebAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F446936A1B286B1D007DC2D7 /* WebAPI.m */; };
+		F446936F1B286BC1007DC2D7 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F446936E1B286BC1007DC2D7 /* User.m */; };
+		F44693721B287C0D007DC2D7 /* Avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F44693711B287C0D007DC2D7 /* Avatar.jpg */; };
+		F44693781B289C51007DC2D7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44693751B289C51007DC2D7 /* LoginViewController.m */; };
+		F44693791B289C51007DC2D7 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44693771B289C51007DC2D7 /* ProfileViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F44693591B286AB4007DC2D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44693371B286AB4007DC2D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F446933E1B286AB4007DC2D7;
+			remoteInfo = PhpWebApiLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F446933F1B286AB4007DC2D7 /* PhpApiLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhpApiLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44693431B286AB4007DC2D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44693441B286AB4007DC2D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F44693461B286AB4007DC2D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F44693471B286AB4007DC2D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F446934D1B286AB4007DC2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F446934F1B286AB4007DC2D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F44693521B286AB4007DC2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F44693581B286AB4007DC2D7 /* PhpApiLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhpApiLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F446935D1B286AB4007DC2D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F446935E1B286AB4007DC2D7 /* PhpWebApiLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhpWebApiLoginTests.m; sourceTree = "<group>"; };
+		F44693691B286B1D007DC2D7 /* WebAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAPI.h; sourceTree = "<group>"; };
+		F446936A1B286B1D007DC2D7 /* WebAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAPI.m; sourceTree = "<group>"; };
+		F446936D1B286BC1007DC2D7 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		F446936E1B286BC1007DC2D7 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		F44693711B287C0D007DC2D7 /* Avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Avatar.jpg; sourceTree = "<group>"; };
+		F44693741B289C51007DC2D7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F44693751B289C51007DC2D7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F44693761B289C51007DC2D7 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		F44693771B289C51007DC2D7 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F446933C1B286AB4007DC2D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44693551B286AB4007DC2D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F44693361B286AB4007DC2D7 = {
+			isa = PBXGroup;
+			children = (
+				F44693411B286AB4007DC2D7 /* PhpWebApiLogin */,
+				F446935B1B286AB4007DC2D7 /* PhpWebApiLoginTests */,
+				F44693401B286AB4007DC2D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F44693401B286AB4007DC2D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F446933F1B286AB4007DC2D7 /* PhpApiLogin.app */,
+				F44693581B286AB4007DC2D7 /* PhpApiLoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F44693411B286AB4007DC2D7 /* PhpWebApiLogin */ = {
+			isa = PBXGroup;
+			children = (
+				F44693701B287C0D007DC2D7 /* Images */,
+				F446936C1B286BC1007DC2D7 /* Dictionary */,
+				F44693681B286B1D007DC2D7 /* Shared */,
+				F44693461B286AB4007DC2D7 /* AppDelegate.h */,
+				F44693471B286AB4007DC2D7 /* AppDelegate.m */,
+				F446934C1B286AB4007DC2D7 /* Main.storyboard */,
+				F446934F1B286AB4007DC2D7 /* Images.xcassets */,
+				F44693511B286AB4007DC2D7 /* LaunchScreen.xib */,
+				F44693731B289C51007DC2D7 /* ViewControllers */,
+				F44693421B286AB4007DC2D7 /* Supporting Files */,
+			);
+			path = PhpWebApiLogin;
+			sourceTree = "<group>";
+		};
+		F44693421B286AB4007DC2D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F44693431B286AB4007DC2D7 /* Info.plist */,
+				F44693441B286AB4007DC2D7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F446935B1B286AB4007DC2D7 /* PhpWebApiLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				F446935E1B286AB4007DC2D7 /* PhpWebApiLoginTests.m */,
+				F446935C1B286AB4007DC2D7 /* Supporting Files */,
+			);
+			path = PhpWebApiLoginTests;
+			sourceTree = "<group>";
+		};
+		F446935C1B286AB4007DC2D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F446935D1B286AB4007DC2D7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F44693681B286B1D007DC2D7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F44693691B286B1D007DC2D7 /* WebAPI.h */,
+				F446936A1B286B1D007DC2D7 /* WebAPI.m */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F446936C1B286BC1007DC2D7 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				F446936D1B286BC1007DC2D7 /* User.h */,
+				F446936E1B286BC1007DC2D7 /* User.m */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		F44693701B287C0D007DC2D7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F44693711B287C0D007DC2D7 /* Avatar.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		F44693731B289C51007DC2D7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F44693741B289C51007DC2D7 /* LoginViewController.h */,
+				F44693751B289C51007DC2D7 /* LoginViewController.m */,
+				F44693761B289C51007DC2D7 /* ProfileViewController.h */,
+				F44693771B289C51007DC2D7 /* ProfileViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F446933E1B286AB4007DC2D7 /* PhpApiLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44693621B286AB4007DC2D7 /* Build configuration list for PBXNativeTarget "PhpApiLogin" */;
+			buildPhases = (
+				F446933B1B286AB4007DC2D7 /* Sources */,
+				F446933C1B286AB4007DC2D7 /* Frameworks */,
+				F446933D1B286AB4007DC2D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhpApiLogin;
+			productName = PhpWebApiLogin;
+			productReference = F446933F1B286AB4007DC2D7 /* PhpApiLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F44693571B286AB4007DC2D7 /* PhpApiLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44693651B286AB4007DC2D7 /* Build configuration list for PBXNativeTarget "PhpApiLoginTests" */;
+			buildPhases = (
+				F44693541B286AB4007DC2D7 /* Sources */,
+				F44693551B286AB4007DC2D7 /* Frameworks */,
+				F44693561B286AB4007DC2D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F446935A1B286AB4007DC2D7 /* PBXTargetDependency */,
+			);
+			name = PhpApiLoginTests;
+			productName = PhpWebApiLoginTests;
+			productReference = F44693581B286AB4007DC2D7 /* PhpApiLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F44693371B286AB4007DC2D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Franz Ayestaran";
+				TargetAttributes = {
+					F446933E1B286AB4007DC2D7 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					F44693571B286AB4007DC2D7 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = F446933E1B286AB4007DC2D7;
+					};
+				};
+			};
+			buildConfigurationList = F446933A1B286AB4007DC2D7 /* Build configuration list for PBXProject "PhpApiLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F44693361B286AB4007DC2D7;
+			productRefGroup = F44693401B286AB4007DC2D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F446933E1B286AB4007DC2D7 /* PhpApiLogin */,
+				F44693571B286AB4007DC2D7 /* PhpApiLoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F446933D1B286AB4007DC2D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44693721B287C0D007DC2D7 /* Avatar.jpg in Resources */,
+				F446934E1B286AB4007DC2D7 /* Main.storyboard in Resources */,
+				F44693531B286AB4007DC2D7 /* LaunchScreen.xib in Resources */,
+				F44693501B286AB4007DC2D7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44693561B286AB4007DC2D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F446933B1B286AB4007DC2D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F446936F1B286BC1007DC2D7 /* User.m in Sources */,
+				F44693481B286AB4007DC2D7 /* AppDelegate.m in Sources */,
+				F44693451B286AB4007DC2D7 /* main.m in Sources */,
+				F446936B1B286B1D007DC2D7 /* WebAPI.m in Sources */,
+				F44693791B289C51007DC2D7 /* ProfileViewController.m in Sources */,
+				F44693781B289C51007DC2D7 /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44693541B286AB4007DC2D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F446935F1B286AB4007DC2D7 /* PhpWebApiLoginTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F446935A1B286AB4007DC2D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F446933E1B286AB4007DC2D7 /* PhpApiLogin */;
+			targetProxy = F44693591B286AB4007DC2D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F446934C1B286AB4007DC2D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F446934D1B286AB4007DC2D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F44693511B286AB4007DC2D7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F44693521B286AB4007DC2D7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F44693601B286AB4007DC2D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F44693611B286AB4007DC2D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F44693631B286AB4007DC2D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhpWebApiLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = PhpApiLogin;
+			};
+			name = Debug;
+		};
+		F44693641B286AB4007DC2D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhpWebApiLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = PhpApiLogin;
+			};
+			name = Release;
+		};
+		F44693661B286AB4007DC2D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhpWebApiLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = PhpApiLoginTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhpWebApiLogin.app/PhpWebApiLogin";
+			};
+			name = Debug;
+		};
+		F44693671B286AB4007DC2D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhpWebApiLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = PhpApiLoginTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhpWebApiLogin.app/PhpWebApiLogin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F446933A1B286AB4007DC2D7 /* Build configuration list for PBXProject "PhpApiLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44693601B286AB4007DC2D7 /* Debug */,
+				F44693611B286AB4007DC2D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44693621B286AB4007DC2D7 /* Build configuration list for PBXNativeTarget "PhpApiLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44693631B286AB4007DC2D7 /* Debug */,
+				F44693641B286AB4007DC2D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F44693651B286AB4007DC2D7 /* Build configuration list for PBXNativeTarget "PhpApiLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44693661B286AB4007DC2D7 /* Debug */,
+				F44693671B286AB4007DC2D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F44693371B286AB4007DC2D7 /* Project object */;
+}
