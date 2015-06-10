@@ -8,7 +8,7 @@
  responsible for determining it's worthiness for any given application or task. Here clearly
  states that the code is for learning purposes only and is not guaranteed to conform to any
  programming style, standard, or be an adequate answer for any given problem.
-*/
+ */
 
 #import "WebAPI.h"
 
@@ -20,7 +20,7 @@
 
 NSString *BasicAuthenticationCredentials = @"codemunkey:L3tm31n.";
 
-NSString *CodeMunkeysWebAPIservice = @"http://domain.webapiservice.com/codemunkeyswebapi/";
+NSString *CodeMunkeysWebAPIservice = @"https://secure.webapiservice.com/codemunkeyswebapi/";
 
 +(NSString*)EncryptCredentials:(NSString *)UsernamePassword
 {
@@ -50,54 +50,46 @@ NSString *CodeMunkeysWebAPIservice = @"http://domain.webapiservice.com/codemunke
     [request setHTTPBody:postData];
     
     NSLog(@"Request: %@", request);
-
-    NSString *connectionRunLoopMode = @"connectionRunLoopMode";
-    NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:request delegate:url startImmediately:NO];
-    NSRunLoop *currentRunLoop = [NSRunLoop currentRunLoop];
-    [connection unscheduleFromRunLoop:currentRunLoop forMode:NSDefaultRunLoopMode];
-    [connection scheduleInRunLoop:currentRunLoop forMode:connectionRunLoopMode];
-    [connection start];
+    
     NSURLResponse* response = nil;
-    //NSData* data = [NSData dataWithContentsOfURL: url];
     NSData* data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil];
     
-    while ([currentRunLoop runMode:connectionRunLoopMode beforeDate:[NSDate distantFuture]]);
     if (data != nil)
     {
-    NSError* jsonError;
-    NSDictionary* json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&jsonError];
-    
-    if(nil != jsonError)
-    {
-        NSLog(@"Error: %@", jsonError);
-    }
-    else
-    {
-        if (json) {
-            
-            for (NSDictionary* jsonDict in json) {
+        NSError* jsonError;
+        NSDictionary* json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&jsonError];
+        
+        if(nil != jsonError)
+        {
+            NSLog(@"Error: %@", jsonError);
+        }
+        else
+        {
+            if (json) {
                 
-                User *user = [[User alloc] init];
-                [user setStatus:[jsonDict objectForKey:@"status"]];
-                [user setUserid:[jsonDict objectForKey:@"userid"]];
-                [user setUsername:[jsonDict objectForKey:@"username"]];
-                [user setFirstname:[jsonDict objectForKey:@"firstname"]];
-                [user setSurname:[jsonDict objectForKey:@"surname"]];
-                [user setEmail:[jsonDict objectForKey:@"email"]];
-                [user setPhonenumber:[jsonDict objectForKey:@"phonenumber"]];
-                [user setPhoto:[jsonDict objectForKey:@"photo"]];
-                [user setLatitude:[jsonDict objectForKey:@"latitude"]];
-                [user setLongitude:[jsonDict objectForKey:@"longitude"]];
-                [user setRadius:[jsonDict objectForKey:@"radius"]];
-                [user setUnit:[jsonDict objectForKey:@"unit"]];
-                
-                UserLoginDetails = user;
+                for (NSDictionary* jsonDict in json) {
+                    
+                    User *user = [[User alloc] init];
+                    [user setStatus:[jsonDict objectForKey:@"status"]];
+                    [user setUserid:[jsonDict objectForKey:@"userid"]];
+                    [user setUsername:[jsonDict objectForKey:@"username"]];
+                    [user setFirstname:[jsonDict objectForKey:@"firstname"]];
+                    [user setSurname:[jsonDict objectForKey:@"surname"]];
+                    [user setEmail:[jsonDict objectForKey:@"email"]];
+                    [user setPhonenumber:[jsonDict objectForKey:@"phonenumber"]];
+                    [user setPhoto:[jsonDict objectForKey:@"photo"]];
+                    [user setLatitude:[jsonDict objectForKey:@"latitude"]];
+                    [user setLongitude:[jsonDict objectForKey:@"longitude"]];
+                    [user setRadius:[jsonDict objectForKey:@"radius"]];
+                    [user setUnit:[jsonDict objectForKey:@"unit"]];
+                    
+                    UserLoginDetails = user;
+                }
+            }
+            else {
+                NSLog(@"An error occurred: %@", jsonError);
             }
         }
-        else {
-            NSLog(@"An error occurred: %@", jsonError);
-        }
-    }
     }
     else
     {
