@@ -51,7 +51,6 @@ NSString *CodeMunkeysWebAPIservice = @"http://domain.webapiservice.com/codemunke
     
     NSLog(@"Request: %@", request);
 
-    
     NSString *connectionRunLoopMode = @"connectionRunLoopMode";
     NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:request delegate:url startImmediately:NO];
     NSRunLoop *currentRunLoop = [NSRunLoop currentRunLoop];
