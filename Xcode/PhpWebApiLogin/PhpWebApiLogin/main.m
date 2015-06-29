@@ -1,10 +1,14 @@
-//
-//  main.m
-//  PhpWebApiLogin
-//
-//  Created by Administrator on 10/06/2015.
-//  Copyright (c) 2015 Franz Ayestaran. All rights reserved.
-//
+/*
+ main.m
+ 
+ Developed by Franz Ayestaran on 10/6/15.
+ Copyright (c) 2015 CodeMunkeys All rights reserved.
+ 
+ You may use this code in your own projects and upon doing so, you the programmer are solely
+ responsible for determining it's worthiness for any given application or task. Here clearly
+ states that the code is for learning purposes only and is not guaranteed to conform to any
+ programming style, standard, or be an adequate answer for any given problem.
+*/
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"

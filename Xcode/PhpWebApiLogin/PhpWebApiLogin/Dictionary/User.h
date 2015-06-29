@@ -27,7 +27,8 @@
 @property (nonatomic, strong) NSString *radius;
 @property (nonatomic, strong) NSString *unit;
 
-/*
+/* Embedded Test Data
+ 
  [{"status":1,"username":"GuestUser","firstname":"Guest","surname":"User","email":"guest@user.com","phonenumber":"01234567890","photo":"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAASUAAAEVCAYAAACmHfPaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAADa2SURBVHhe7d1ZrzRXdf\/xJhN4wiM2tokxNmBjQxQHI8URICFBcpHbvKUoyk1eRy5yFymDkighECDEJpDYDLbjAY+AJ0xsyPj\/8ynn97C86T7nOc\/p6lPdZ32lraratau69qpav1p7167qd\/y\/n7JqmqZZCL\/wf9OmaZpF0KLUNM2iaFFqmmZRtCg1TbMoWpSaplkULUpN0yyKFqWmaRZFi9I5Ze7haUftv4fGNUfRonTgbBKAd7zjHf83d3GcVEjW7T","latitude":"0","longitude":"0","radius":"100","unit":"metric"}]
  */
 

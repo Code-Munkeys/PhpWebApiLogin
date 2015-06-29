@@ -16,12 +16,6 @@
 
 - (NSString *)description {
     
-    //NSString *convertedString = [[NSString alloc] initWithData:glbJsonData encoding:NSUTF8StringEncoding];
-    
-    //NSLog(@"%@",convertedString);
-    
-    //return convertedString;
-    
     return [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@\n%@\n%@\n%@\n%@\n%@\n%@\n%@", [self status], [self userid], [self username], [self firstname], [self surname], [self email], [self phonenumber], [self photo], [self latitude], [self longitude], [self radius], [self unit]];
 }
 
@@ -51,7 +45,6 @@
         jsonData = [NSJSONSerialization dataWithJSONObject:newUser options:NSJSONWritingPrettyPrinted error:&jsonError];
     }
     
-    //glbJsonData = jsonData;
     return jsonData;
 }
 
