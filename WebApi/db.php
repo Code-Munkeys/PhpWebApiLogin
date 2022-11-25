@@ -1,9 +1,9 @@
 <?php 
  $db_connection;
  $db_options['host'] = 'localhost';
- $db_options['user'] = 'primate';
+ $db_options['user'] = 'phpwebapilogin';
  $db_options['password'] = 'L3tm31n.';
- $db_options['database'] = 'codemunkeys';
+ $db_options['database'] = 'phpwebapilogin';
 
 function db_stat()
 {
@@ -12,14 +12,19 @@ function db_stat()
 
 function db_connect()
 {
-     global $db_options;
-     global $db_connection;
+    global $db_options;
+    global $db_connection;
 
-    $db_connection = mysql_connect($db_options['host'], $db_options['user'], $db_options['password'])
-        or die("Cannot connect to MySQL.");
-    mysql_select_db($db_options['database'], $db_connection)
-        or die("Cannot connect to MySQL.");
-    mysql_query("SET NAMES utf8", $db_connection);
+    $db_connection = mysqli_connect($db_options['host'], $db_options['user'], $db_options['password'], $db_options['database']);
+
+    if (!$db_connection) 
+    {
+        echo "Error: Unable to connect to MySQL." . PHP_EOL;
+        echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+        echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+        exit;
+    }
+
     $GLOBALS['conn_count']++;
 }
 
@@ -31,18 +36,19 @@ function db_select($sql)
          {
              db_connect();
          }
-     $GLOBALS['query_count']++;
-     $result = mysql_query($sql, $db_connection) or die ("$sql");
-       return $result;
- }
 
+    $result = $db_connection -> query($sql);
+
+    $GLOBALS['query_count']++;
+
+    return $result;
+ }
 
 function clear($zip){
 	$zip=str_replace("'", "&apos;", $zip);
 	$zip=str_replace('"', '&quot;', $zip);
 	$zip=strip_tags($zip);
 	return $zip;
-	
 }
 
 function dlina($text, $lenght){
@@ -60,8 +66,8 @@ function dlina($text, $lenght){
 	return $new_str;
 }
 
-// Developed by Franz Ayestaran on 10-6-15.
-// Copyright (c) 2015 CodeMunkeys All rights reserved.
+// Developed by Franz Ayestaran on 10/6/15.
+// Copyright (c) 2022 CodeMunkeys All rights reserved.
  
 // You may use this code in your own projects and upon doing so, you the programmer are solely
 // responsible for determining it's worthiness for any given application or task. Here clearly

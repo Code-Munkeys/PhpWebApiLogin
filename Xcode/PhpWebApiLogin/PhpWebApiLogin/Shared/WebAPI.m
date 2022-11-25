@@ -2,7 +2,7 @@
  WebApi.m
  
  Developed by Franz Ayestaran on 10/6/15.
- Copyright (c) 2015 CodeMunkeys All rights reserved.
+ Copyright (c) 2022 CodeMunkeys All rights reserved.
  
  You may use this code in your own projects and upon doing so, you the programmer are solely
  responsible for determining it's worthiness for any given application or task. Here clearly
@@ -18,9 +18,9 @@
 
 @implementation WebAPI
 
-NSString *BasicAuthenticationCredentials = @"codemunkey:L3tm31n.";
+NSString *BasicAuthenticationCredentials = @"guestuser:L3tm31n.";
 
-NSString *CodeMunkeysWebAPIservice = @"https://secure.webapiservice.com/codemunkeyswebapi/";
+NSString *CodeMunkeysWebAPIservice = @"https://secure.virtual-private-server.net/phpwebapilogin/";
 
 +(NSString*)EncryptCredentials:(NSString *)UsernamePassword
 {

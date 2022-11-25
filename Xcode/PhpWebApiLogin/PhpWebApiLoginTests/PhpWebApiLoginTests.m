@@ -3,7 +3,7 @@
 //  PhpWebApiLoginTests
 //
 //  Created by Administrator on 10/06/2015.
-//  Copyright (c) 2015 Franz Ayestaran. All rights reserved.
+//  Copyright (c) 2022 Franz Ayestaran. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
