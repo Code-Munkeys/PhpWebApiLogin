@@ -19,8 +19,7 @@
 @implementation WebAPI
 
 NSString *BasicAuthenticationCredentials = @"guestuser:L3tm31n.";
-
-NSString *CodeMunkeysWebAPIservice = @"https://secure.virtual-private-server.net/phpwebapilogin/";
+NSString *CodeMunkeysWebAPIservice = @"https://secure.codemunkeys.co.uk/phpwebapilogin/";
 
 +(NSString*)EncryptCredentials:(NSString *)UsernamePassword
 {
